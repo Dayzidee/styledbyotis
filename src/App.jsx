@@ -10,6 +10,7 @@ import { ProductView } from './pages/ProductView';
 import { Cart } from './pages/Cart';
 import { Profile } from './pages/Profile';
 import { Concierge } from './pages/Concierge';
+import { ProductDetail } from './pages/ProductDetail';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/new-arrivals" element={<NewArrivals />} />
           <Route path="/request-a-find" element={<RequestAFind />} />
           <Route path="/concierge" element={<Concierge />} />
+          <Route path="/priority" element={<ProductDetail />} />
         </Routes>
         <Footer />
       </div>
