@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import { MobileNav } from './components/MobileNav';
 import { Home } from './pages/Home';
 import { ProductListing } from './pages/ProductListing';
 import { NewArrivals } from './pages/NewArrivals';
@@ -17,6 +18,7 @@ function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-background text-on-background font-sans selection:bg-secondary selection:text-white">
         <Header />
+        <MobileNav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<ProductListing />} />
