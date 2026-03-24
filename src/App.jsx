@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import { MobileNav } from './components/MobileNav';
 import { Home } from './pages/Home';
 import { ProductListing } from './pages/ProductListing';
 import { NewArrivals } from './pages/NewArrivals';
@@ -30,6 +31,7 @@ function App() {
           <Route path="/priority" element={<ProductDetail />} />
         </Routes>
         <Footer />
+        <MobileNav />
       </div>
     </BrowserRouter>
   );
