@@ -4,14 +4,14 @@ import { NavLink } from 'react-router-dom';
 export function MobileNav() {
   const tabs = [
     { name: 'Priority', path: '/priority', icon: 'stars' },
-    { name: 'Concierge', path: '/concierge', icon: 'concierge' },
+    { name: 'Concierge', path: '/concierge', icon: 'support_agent' },
     { name: 'Shop', path: '/shop', icon: 'shopping_bag' },
     { name: 'Arrivals', path: '/new-arrivals', icon: 'new_releases' },
     { name: 'Track', path: '/track', icon: 'local_shipping' },
   ];
 
   return (
-    <nav className="fixed md:hidden bottom-0 left-0 w-full flex justify-around items-center h-20 px-4 pb-safe bg-white/70 backdrop-blur-md shadow-[0_-4px_20px_0_rgba(0,0,0,0.05)] z-50 border-t border-neutral-100">
+    <nav className="fixed md:hidden bottom-0 left-0 right-0 w-full flex justify-around items-center h-20 px-4 pb-safe bg-white shadow-[0_-4px_20px_0_rgba(0,0,0,0.05)] z-[100] border-t border-neutral-100">
       {tabs.map((tab) => (
         <NavLink
           key={tab.name}

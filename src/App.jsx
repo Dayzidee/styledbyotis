@@ -18,7 +18,6 @@ function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-background text-on-background font-sans selection:bg-secondary selection:text-white">
         <Header />
-        <MobileNav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<ProductListing />} />
@@ -32,6 +31,7 @@ function App() {
           <Route path="/priority" element={<ProductDetail />} />
         </Routes>
         <Footer />
+        <MobileNav />
       </div>
     </BrowserRouter>
   );
