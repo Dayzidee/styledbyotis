@@ -1,28 +1,37 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { products } from '../data/products';
 
 export function ProductView() {
   const { id } = useParams();
 
-  // Mock data - In a real app, fetch based on ID
-  const product = {
-    title: "Vintage Suede Artisan Jacket",
-    category: "Private Collection",
-    price: 3450.00,
-    originalPrice: 4200.00,
-    description: "Sourced directly from elite Tokyo stockists. This 1994 archival piece features hand-burnished Italian suede and custom silver hardware.",
-    condition: "Grade A (Excellent)",
-    source: "Tokyo, JP",
-    destination: "New York, NY",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDnsH2lYqgHuztfrnlFTWvz1LmM37wrf4b4gUL2ADdRPZRE5Gat8jgu27Cw3QFRyw0Lu6Af1ro4CECQZBBNCzeA9MN2zFZdCJvYmCmwmD_bkwKf0BiqE9T6OpY0TiyHHLYMCAdGVnyCoIbM67pcTijgDh4ms5N6Zwcwaag0g9tul2pzMVVwtc3fFKu7widCRspw5zjyLJ-j6_yd0WzpbCAkHj85lUPEVQCdjAsLhklihrT5FqpjE56MzTxfG2dBT1-C-Vtgx8xXdJA7",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD0_19ZNwBs0g2qSrmZOZUUYwIABD2BDWXAs8psE1r7kLfkowb_xxr-rQ3j7ebBh7M1DBhgrGuHZPNOjXQy8n3FhOUpU6q0hPL_zhBTBOt_Bv4XCDm2ME6k5rXtP6dl5TUkKjufN2NP_9vtT1U_usDnbkHKI-BU_l6FYOrZ_8RYlvCNuqqm6VvPSgzKjRd8S8O8WltaUgO1OEQO-PnGee6Uwu323FWOjzmdmyaQ6pFmdjZb0x3UzVPm1wUMMFEMwnfEuiDaQd4yIJVK",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAzeKVtC2oR512hkaEaoxqbmtIc70yjrfGI5dKxeghN4eDaaNke9oovGDhWE8DewofPzVUcg6816sCNuSaQDpxt_-2NVt6xYDkUEdcoGEDNvBQ-U10DQuiTNxeT2c9R48-67FmonHwgmDz42kkM0R5qJvMXvff0uitlTRbYELnyed8h65ZxT2hcMhzsrqy6lL6Ys9lsAwZA2KIm44ed0ENYPjN1NECG_ybt86aIwVcKXHXMVs-vj5lu08DIEwLRuLF4ddeYGEIRGjAJ"
-    ]
+  // Find the product based on ID, fallback to the first one or a mock if not found
+  const product = products.find(p => p.id === id) || products[0];
+  const [added, setAdded] = React.useState(false);
+
+  const handleAddToCart = () => {
+    setAdded(true);
+    setTimeout(() => setAdded(false), 3000);
   };
+
+  if (!product) {
+    return (
+      <div className="pt-32 pb-20 text-center">
+        <h2 className="text-2xl font-black uppercase">Product Not Found</h2>
+        <Link to="/shop" className="text-secondary underline mt-4 inline-block">Back to Shop</Link>
+      </div>
+    );
+  }
 
   return (
     <main className="relative pt-24 md:pt-32 min-h-screen bg-background text-on-surface scroll-smooth pb-20 md:pb-0">
+      {/* Success Toast */}
+      {added && (
+        <div className="fixed top-24 left-1/2 -translate-x-1/2 z-[100] bg-black text-white px-8 py-4 rounded-full font-black text-[10px] uppercase tracking-[0.3em] shadow-2xl animate-bounce">
+          Added to your archive. <Link to="/cart" className="text-secondary underline ml-2">View Cart</Link>
+        </div>
+      )}
+      
       {/* Subtle Asphalt Texture Overlay */}
       <div className="fixed inset-0 opacity-[0.03] pointer-events-none z-0 bg-[url('https://www.transparenttextures.com/patterns/asphalt-dark.png')]"></div>
       
@@ -79,11 +88,17 @@ export function ProductView() {
 
             {/* CTA Section */}
             <div className="space-y-4 mb-12">
-              <button className="w-full bg-secondary text-white py-5 font-bold text-base md:text-lg tracking-widest hover:bg-black transition-all flex justify-center items-center gap-3 active:scale-[0.98] group">
+              <button 
+                onClick={handleAddToCart}
+                className="w-full bg-secondary text-white py-5 font-bold text-base md:text-lg tracking-widest hover:bg-black transition-all flex justify-center items-center gap-3 active:scale-[0.98] group"
+              >
                 ADD TO CART
                 <span className="material-symbols-outlined text-sm md:text-base group-hover:translate-x-1 transition-transform">shopping_cart</span>
               </button>
-              <button className="w-full border-2 border-black text-black py-5 font-bold text-base md:text-lg tracking-widest hover:bg-black hover:text-white transition-all active:scale-[0.98]">
+              <button 
+                onClick={handleAddToCart}
+                className="w-full border-2 border-black text-black py-5 font-bold text-base md:text-lg tracking-widest hover:bg-black hover:text-white transition-all active:scale-[0.98]"
+              >
                 SOURCE IN MY SIZE
               </button>
             </div>

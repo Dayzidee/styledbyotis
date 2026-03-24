@@ -59,7 +59,7 @@ export const NewArrivals = () => {
           {/* Product Grid: Asymmetric Layout - 2 Column on Mobile */}
           <div className="grid grid-cols-2 md:grid-cols-12 gap-6 md:gap-4 lg:gap-12">
             {/* Product Card 1: Large Featured */}
-            <Link to="/product/vols-retro" className="col-span-2 md:col-span-7 flex flex-col group">
+            <Link to="/product/air-max-volts" className="col-span-2 md:col-span-7 flex flex-col group">
               <div className="relative overflow-hidden aspect-[4/5] bg-surface-container-low transition-all duration-700 font-bold group-hover:shadow-[0_40px_100px_rgba(0,0,0,0.1)]">
                 <img 
                   className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110" 
@@ -81,7 +81,7 @@ export const NewArrivals = () => {
             </Link>
 
             {/* Product Card 2: Medium */}
-            <div className="col-span-1 md:col-span-5 md:mt-24 flex flex-col group mt-8 md:mt-24">
+            <Link to="/product/court-legacy-hi" className="col-span-1 md:col-span-5 md:mt-24 flex flex-col group mt-8 md:mt-24">
               <div className="relative overflow-hidden aspect-square bg-surface-container-high transition-all duration-700">
                 <img 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
@@ -99,7 +99,7 @@ export const NewArrivals = () => {
                 </div>
                 <span className="text-sm md:text-lg font-light text-on-surface">$385.00</span>
               </div>
-            </div>
+            </Link>
 
             {/* Product Card 3: Sold Out Small */}
             <div className="col-span-1 md:col-span-4 flex flex-col group">
@@ -123,7 +123,7 @@ export const NewArrivals = () => {
             </div>
 
             {/* Product Card 4: Medium Vertical */}
-            <Link to="/product/box-tee" className="col-span-1 md:col-span-4 md:mt-12 flex flex-col group mt-8 md:mt-12">
+            <Link to="/product/essential-box-tee" className="col-span-1 md:col-span-4 md:mt-12 flex flex-col group mt-8 md:mt-12">
               <div className="relative overflow-hidden aspect-[3/4] bg-surface-container-highest transition-all duration-700 font-bold group-hover:shadow-[0_40px_100px_rgba(0,0,0,0.1)]">
                 <img 
                   className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110" 
@@ -144,7 +144,7 @@ export const NewArrivals = () => {
             </Link>
 
             {/* Product Card 5: Grid Square */}
-            <div className="col-span-2 md:col-span-4 flex flex-col group mt-8 md:mt-0">
+            <Link to="/product/vapor-flare-2" className="col-span-2 md:col-span-4 flex flex-col group mt-8 md:mt-0">
               <div className="relative overflow-hidden aspect-video md:aspect-square bg-surface-container-low transition-all duration-700">
                 <img 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
@@ -162,7 +162,7 @@ export const NewArrivals = () => {
                 </div>
                 <span className="text-lg md:text-lg font-light text-on-surface">$210.00</span>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

@@ -43,7 +43,7 @@ export function ProductListing() {
       {/* Asymmetrical Product Grid - 2 Column on Mobile */}
       <div className="grid grid-cols-2 md:grid-cols-12 gap-4 md:gap-8 lg:gap-12">
         {/* Featured Product (Large) */}
-        <Link to="/product/suede-jacket" className="col-span-2 md:col-span-7 group relative">
+        <Link to="/product/vintage-suede-jacket" className="col-span-2 md:col-span-12 lg:col-span-7 group relative">
           <div className="aspect-[4/5] bg-surface-container-low overflow-hidden transition-all duration-700 group-hover:shadow-[0_40px_100px_rgba(0,0,0,0.2)]">
             <img className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110" alt="Luxury brown suede jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2qPaoHCnqbd76xIjA63cWPWz5oqMojRCMEGyh-N7qfX2PhW7RnlFgr7Ewd3eU7x2LyeUxoCFeFGJfwR4jRVtLHrR7CerYLPtvktLlr1009SHvplN3ODHMykZXyiglilHFEWEXQEMiu2BA95-ZLH4P6baVBXjDE3aRwlmTNY32F9CuSh1afrnk0WsF0ms3878gir9eD7hDmZ5AlrW7U7wUJLCPnhhk2-FnNlEy4OHHFdXAi662fKk9Fbw6KSiMR7kxBrZ88EYVaZk-" />
             <div className="absolute inset-0 bg-black/0 md:group-hover:bg-black/20 transition-all flex items-center justify-center md:opacity-0 md:group-hover:opacity-100">
@@ -67,7 +67,7 @@ export function ProductListing() {
         </Link>
 
         {/* Side Product 1 */}
-        <div className="col-span-1 md:col-span-5 flex flex-col justify-center">
+        <Link to="/product/fragment-85-high" className="col-span-1 md:col-span-5 flex flex-col justify-center">
           <div className="group relative md:pl-12">
             <div className="aspect-square bg-surface-container-highest overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-black/5">
               <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Limited edition sneakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp4_OovWuMvz59jnsH4aErL9yDzwUx8S33GDHnfvMV7a075m17XAMw8EV6v1i2ffg1kXQQzQwRiGrIzMM-7AWfwqQWYXJPfkmoBySskRpCG7Y0AaXvAqYYOLXGPP6rA2GfoC5ZTTGw24QjpFs3CFtalNzHkXtUluMeUVBlFAxYBI1dNboKs4pDPjK0Gwt4_bcKMHpSdyOOdZvn5_wEHZTeCsx8d4feU07KWT3O2I92ZQs07a-uBriP1UKDNQ-kANlPkGhQibIAip_9" />
@@ -85,10 +85,10 @@ export function ProductListing() {
             </div>
             <button className="md:hidden w-full mt-3 border border-outline-variant py-2 text-[9px] font-black uppercase tracking-widest">Source</button>
           </div>
-        </div>
+        </Link>
 
         {/* Row 2 - Asymmetric Spacing */}
-        <div className="col-span-1 md:col-span-4 mt-6 md:mt-12">
+        <Link to="/product/selvage-denim-set" className="col-span-1 md:col-span-4 mt-6 md:mt-12">
           <div className="group relative">
             <div className="aspect-[3/4] bg-surface-container overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-black/5">
               <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Raw indigo denim set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPjHyXRlZIp3XiT_9HW30uPYh6xCMpFOOa9tIGVEUKS2iK1TvZMKiJvf4BTd-nTB8cyVfqwSmGZdcGFjsIIWGpV1A7d8Ca-GFWYLzHXC9sSkZI4jQM7fc4GGJvACnWUe3-_jsAvnArZoWD4f2Pd2jHlJX7Jyr_wH0ZHYUTWu61OErw61jmXx1HnwIR1lJFWEiRb6TC9ZBgxffTGrcAS8nhhYenOGT6Q6QD5UA4YV3MAUPbGRp3S1jTJi9S6QE78ZKgucYTkgFkCDm5" />
@@ -100,9 +100,9 @@ export function ProductListing() {
             </div>
             <button className="md:hidden w-full mt-3 border border-outline-variant py-2 text-[9px] font-black uppercase tracking-widest">Source</button>
           </div>
-        </div>
+        </Link>
 
-        <div className="col-span-1 md:col-span-4 mt-6 md:mt-24">
+        <Link to="/product/bone-canvas-high" className="col-span-1 md:col-span-4 mt-6 md:mt-24">
           <div className="group relative">
             <div className="aspect-[3/4] bg-surface-container-low overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-black/5">
               <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="White premium sneakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgwa_d8ZMmlvU467xp1i8eJqg_6dV7qRQKGtgEgAb5BLNAwiNSsRh71wNZDxCtdZ7BGGD3kND5QZXfSHxHYfW91UdwM9EE9Si7EUcpMGkOa7SmMooS5cvUur-x7ErjOrg5Go9bE7PP_aWz1kzPbV79YhsqTWQypZT9qJO140k_ZSh8FTyVx57XeCQNs3oLYO1MypkaU0KPHBEWKHMmpV6tuRGL5uPd8Xd_IvGZyURgMN8UOa4Ht9wn6n7c2UM85vd3JJc8tiIxOM0k" />
@@ -114,9 +114,9 @@ export function ProductListing() {
             </div>
             <button className="md:hidden w-full mt-3 border border-outline-variant py-2 text-[9px] font-black uppercase tracking-widest">Source</button>
           </div>
-        </div>
+        </Link>
 
-        <div className="col-span-2 md:col-span-4 mt-6 md:mt-12">
+        <Link to="/product/midnight-biker" className="col-span-2 md:col-span-4 mt-6 md:mt-12">
           <div className="group relative">
             <div className="aspect-[4/3] md:aspect-[3/4] bg-surface-container-highest overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-black/5">
               <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Black luxury leather biker jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTG0sfZSFq_bS3b80Z6e7fjIm1SsIcIB5fb0DJ82FxsEL9Fuy-8oXcuolCT2e65REhTf9DPEvTZUWOWeB-RjLi302jTb4ouUUQpeOkBI-n8LWy0RPzfk9oVSdEnE3UK9uzZp9G6oUos4_TFONzyUPT9jXhNFp-NozCCvxiQdFgwoHbi5ZTrZlBSrXH2Y5V4D6Papea7xR9A89eCSEEBhkBmYENzfOkYOTft88Cm78eM8-MRmd0OeqH0KzA0XphEDYamAr5Q27ORE4t" />
@@ -128,7 +128,7 @@ export function ProductListing() {
             </div>
             <button className="md:hidden w-full mt-4 bg-primary text-white py-3 text-[10px] font-black uppercase tracking-widest">Source Piece</button>
           </div>
-        </div>
+        </Link>
       </div>
 
       {/* Pagination/Load More */}

@@ -28,11 +28,11 @@ export function Home() {
             <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white md:text-black leading-[0.9] mb-6 md:mb-8 uppercase">Your Official<br/>Global Bridge<br/>To Retail.</h1>
             <p className="text-neutral-300 md:text-on-surface-variant text-sm md:text-lg font-light leading-relaxed mb-8 md:mb-10 max-w-md">No borders. No markups. Otis sources the world's most coveted drops directly from UK, US, and EU boutiques to your doorstep.</p>
             <div className="flex flex-col sm:flex-row gap-4 sm:space-x-4">
-              <button className="bg-secondary md:bg-primary text-white px-8 py-4 font-bold text-xs md:text-sm tracking-widest uppercase hover:scale-105 transition-transform active:scale-95 duration-200">Start Sourcing</button>
-              <button className="hidden md:flex border-b-2 border-tertiary text-black font-bold px-4 py-4 text-sm items-center space-x-2">
+              <Link to="/shop" className="bg-secondary md:bg-primary text-white px-8 py-4 font-bold text-xs md:text-sm tracking-widest uppercase hover:scale-105 transition-transform active:scale-95 duration-200 text-center">Start Sourcing</Link>
+              <Link to="/new-arrivals" className="hidden md:flex border-b-2 border-tertiary text-black font-bold px-4 py-4 text-sm items-center space-x-2">
                 <span>The New Collection</span>
                 <span className="material-symbols-outlined">arrow_forward</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -86,12 +86,12 @@ export function Home() {
             <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black leading-none uppercase">The Arrivals</h2>
             <p className="hidden md:block text-on-surface-variant font-light mt-4">Curated selections from our London &amp; New York hubs.</p>
           </div>
-          <a className="text-secondary font-black text-[10px] md:text-xs tracking-widest uppercase flex items-center gap-2 pb-1 border-b-2 border-secondary" href="#">View All Drops <span className="hidden md:inline material-symbols-outlined text-sm">north_east</span></a>
+          <Link className="text-secondary font-black text-[10px] md:text-xs tracking-widest uppercase flex items-center gap-2 pb-1 border-b-2 border-secondary" to="/new-arrivals">View All Drops <span className="hidden md:inline material-symbols-outlined text-sm">north_east</span></Link>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-12 gap-4 md:gap-8">
           {/* Main Feature Drop */}
-          <Link to="/product/suede-archive" className="col-span-2 md:col-span-7 group cursor-pointer relative aspect-[4/5] overflow-hidden bg-surface-container shadow-sm hover:shadow-2xl transition-all duration-700">
+          <Link to="/product/vintage-suede-jacket" className="col-span-2 md:col-span-7 group cursor-pointer relative aspect-[4/5] overflow-hidden bg-surface-container shadow-sm hover:shadow-2xl transition-all duration-700">
             <img alt="Suede Archive" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlTrGdRSxK6p-Iab_UCALTYDPMBAOyMwkxRr4bXpaUaWQWYEJQt02276tH3Ou0kn2popVyDGhyir87RNw1yiul91FtXN1zdsRrjFSKDhLHxxGjrQXpWrWSqUpUwHKi0qu8O_5SdXi3funDH-el8v4px_63j58-I2erlVGQc4VfA0J8kDOOo5pdDc6uxMY_gcTHVSptM20FpiPPAoOvKFRX9PA2BMc-qesPm355CORIboVoKzVqXVkTKHG0HGIRybyIc9bIQu21oVCB" />
             <div className="absolute top-4 left-4 bg-white px-2 py-1 border border-black/5">
               <span className="text-[8px] md:text-[10px] font-black uppercase tracking-tighter">Verified Sourcing</span>
@@ -104,7 +104,7 @@ export function Home() {
           </Link>
 
           {/* Secondary Drops */}
-          <Link to="/product/tokyo-exclusive" className="col-span-1 md:col-span-5 aspect-[3/4] md:aspect-auto mt-4 md:mt-0 relative overflow-hidden bg-surface-container group cursor-pointer border border-black/5">
+          <Link to="/product/fragment-85-high" className="col-span-1 md:col-span-5 aspect-[3/4] md:aspect-auto mt-4 md:mt-0 relative overflow-hidden bg-surface-container group cursor-pointer border border-black/5">
             <img alt="Tokyo Exclusive" className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3kXyP0pAdxTJZWNLZLnrmCD-IydI1rkHT1TXdEKwFykTLxb37yoE1kp2woN-wihvZMQ8kzzEwq1Drj51taxPgLZxqsJC6gP449cgbYshTPFnNeCMOYvuAQfMVuYCC6MxChSjdIpF36SnTkiUfkGhgXFZ2mwBc0Ab_UFNrUZGkXi0bIHt-JORUdaipzWyDUQd9gxNb8h0-aN6d50ORZOpwGe3Dg9W0s6qoGsWVc7z2ry05lI0TfVfjmjwRgijFEajTTbfl6A1c8xNr" />
             <div className="p-3 md:p-6 absolute bottom-0 bg-white/90 backdrop-blur w-full flex justify-between items-end translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
               <div>
@@ -120,20 +120,20 @@ export function Home() {
             </div>
           </Link>
 
-          <div className="col-span-1 md:col-span-5 md:col-start-8 aspect-[3/4] md:aspect-auto relative overflow-hidden bg-surface-container group cursor-pointer lg:-mt-24">
+          <Link to="/product/selvage-denim-set" className="col-span-1 md:col-span-5 md:col-start-8 aspect-[3/4] md:aspect-auto relative overflow-hidden bg-surface-container group cursor-pointer lg:-mt-24">
             <img alt="Selvedge Denim" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjmHNnA5UTpOgrW-6Yck-mPNd376oiRaxG2q719QiEUeqwEgN7ZzOotvbBlixPXOuE7sGXcBf9_cUl3ntoZrsmNPdxR8trgBn2HvwFj1mxqID-ktiMPQJCwk3pg0rzOJA4uGaU8cOeMmrC2h0Mjm2kwtSLua5AVCc1qq_4D-5Efn2b1c4rUAtuMf3p9UHiGsM3SrTNQaAAg3HIGr7HCaocN3yo8sBCIww4A5hf_ts_pNorMLqQWlZfAiFfJgLOiNpg6PplqzI_8RuF" />
             <div className="p-3 md:p-6 absolute bottom-0 bg-white/90 backdrop-blur w-full flex justify-between items-end translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all">
               <div>
                 <span className="text-[9px] md:text-[10px] font-black block uppercase tracking-tighter">Selvedge Denim</span>
-                <span className="text-xs md:text-lg font-black">$185.00</span>
+                <span className="text-xs md:text-lg font-black">$580.00</span>
               </div>
               <span className="material-symbols-outlined text-lg">arrow_outward</span>
             </div>
             <div className="md:hidden p-3 absolute bottom-0 bg-white/95 backdrop-blur w-full">
               <span className="text-[9px] font-black block uppercase tracking-tighter">Selvedge Denim</span>
-              <span className="text-[11px] font-light text-on-surface-variant">$185.00</span>
+              <span className="text-[11px] font-light text-on-surface-variant">$580.00</span>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
 
@@ -206,7 +206,7 @@ export function Home() {
         <div className="relative z-10 max-w-lg">
           <h3 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none mb-6">Own the Court,<br/>Anywhere.</h3>
           <p className="text-white/70 font-light text-xs md:text-sm tracking-[0.2em] uppercase mb-10">Access restricted retail ecosystems today.</p>
-          <button className="border-2 border-white text-white px-10 py-4 font-black text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all active:scale-95">Request Invite</button>
+          <Link to="/request-a-find" className="inline-block border-2 border-white text-white px-10 py-4 font-black text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all active:scale-95">Request Invite</Link>
         </div>
       </section>
     </main>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +10,7 @@ export function ProductDetail() {
       category: "Footwear / Quickstrike",
       date: "Expected Arriving: April 12",
       price: 420.00,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCp4_OovWuMvz59jnsH4aErL9yDzwUx8S33GDHnfvMV7a075m17XAMw8EV6v1i2ffg1kXQQzQwRiGrIzMM-7AWfwqQWYXJPfkmoBySskRpCG7Y0AaXvAqYYOLXGPP6rA2GfoC5ZTTGw24QjpFs3CFtalNzHkXtUluMeUVBlFAxYBI1dNboKs4pDPjK0Gwt4_bcKMHpSdyOOdZvn5_wEHZTeCsx8d4feU07KWT3O2I92ZQs07a-uBriP1UKDNQ-kANlPkGhQibIAip_9",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCp4_OovWuMvz59jnsH4aErL9yDzwUx8S33GDHnfvMV7a075m17XAMw8EV6v1i2ffg1kXQQzQwRiGrIzMM-7AWfwqQWYXJPfkGhQibIAip_9",
       status: "In Contention"
     },
     {
@@ -142,3 +143,4 @@ export function ProductDetail() {
     </main>
   );
 }
+
