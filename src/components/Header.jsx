@@ -8,7 +8,7 @@ export function Header() {
       </div>
       
       <div className="hidden md:flex items-center space-x-8">
-        <NavLink to="/ProductDetail" className={({ isActive }) => isActive ? "text-primary font-bold border-b-2 border-primary pb-1 Inter font-light tracking-widest text-[11px] uppercase transition-all duration-300" : "text-neutral-500 hover:text-black transition-colors Inter font-light tracking-widest text-[11px] uppercase"}>Priority</NavLink>
+        <NavLink to="/priority" className={({ isActive }) => isActive ? "text-primary font-bold border-b-2 border-primary pb-1 Inter font-light tracking-widest text-[11px] uppercase transition-all duration-300" : "text-neutral-500 hover:text-black transition-colors Inter font-light tracking-widest text-[11px] uppercase"}>Priority</NavLink>
         <NavLink to="/concierge" className={({ isActive }) => isActive ? "text-primary font-bold border-b-2 border-primary pb-1 Inter font-light tracking-widest text-[11px] uppercase transition-all duration-300" : "text-neutral-500 hover:text-black transition-colors Inter font-light tracking-widest text-[11px] uppercase"}>Concierge</NavLink>
         <NavLink to="/shop" className={({ isActive }) => isActive ? "text-primary font-bold border-b-2 border-primary pb-1 Inter font-light tracking-widest text-[11px] uppercase" : "text-neutral-500 hover:text-black transition-colors Inter font-light tracking-widest text-[11px] uppercase"}>Shop</NavLink>
         <NavLink to="/new-arrivals" className={({ isActive }) => isActive ? "text-primary font-bold border-b-2 border-primary pb-1 Inter font-light tracking-widest text-[11px] uppercase" : "text-neutral-500 hover:text-black transition-colors Inter font-light tracking-widest text-[11px] uppercase"}>New Arrivals</NavLink>

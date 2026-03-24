@@ -4,8 +4,9 @@ import { NavLink } from 'react-router-dom';
 export function MobileNav() {
   const tabs = [
     { name: 'Priority', path: '/priority', icon: 'stars' },
+    { name: 'Concierge', path: '/concierge', icon: 'concierge' },
     { name: 'Shop', path: '/shop', icon: 'shopping_bag' },
-    { name: 'Arrivals', path: '/arrivals', icon: 'new_releases' },
+    { name: 'Arrivals', path: '/new-arrivals', icon: 'new_releases' },
     { name: 'Track', path: '/track', icon: 'local_shipping' },
   ];
 
