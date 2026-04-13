@@ -27,7 +27,7 @@ export function Home() {
           
           <div className="max-w-xl relative z-20">
             <span className="inline-block bg-secondary text-white text-[9px] md:text-[10px] font-black tracking-[0.2em] px-3 py-1 mb-4 md:mb-6 uppercase">Lagos Sourcing Engine</span>
-            <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white md:text-black leading-[0.9] mb-6 md:mb-8 uppercase">Your Official<br/>Global Bridge<br/>To Retail.</h1>
+            <h1 className="text-[clamp(3rem,9vw,8.5rem)] font-black tracking-tighter text-white md:text-black leading-[0.9] mb-6 md:mb-8 uppercase break-words">Your Official<br/>Global Bridge<br/>To Retail.</h1>
             <p className="text-neutral-300 md:text-on-surface-variant text-sm md:text-lg font-light leading-relaxed mb-8 md:mb-10 max-w-md">No borders. No markups. Otis sources the world's most coveted drops directly from UK, US, and EU boutiques to Lagos.</p>
             <div className="flex flex-col sm:flex-row gap-4 sm:space-x-4">
               <Link to="/shop" className="bg-secondary md:bg-primary text-white px-8 py-4 font-bold text-xs md:text-sm tracking-widest uppercase hover:scale-105 transition-transform active:scale-95 duration-200 text-center">Start Sourcing</Link>
@@ -54,7 +54,7 @@ export function Home() {
         <div className="wood-grain absolute inset-0 opacity-20 hidden md:block"></div>
         <div className="max-w-4xl mx-auto relative z-10 text-center md:text-center">
           <span className="text-on-tertiary-container font-black text-[10px] uppercase tracking-widest block mb-2 md:hidden">Feature: The Bridge</span>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-black leading-none mb-4 uppercase">Found something<br className="md:hidden"/> overseas?</h2>
+          <h2 className="text-[clamp(2.5rem,6vw,4.5rem)] font-black tracking-tighter text-black leading-none mb-4 uppercase break-words">Found something<br className="md:hidden"/> overseas?</h2>
           <p className="text-on-surface-variant font-light text-sm md:text-base mb-10 md:mb-12 max-w-md mx-auto">Paste any retail store link below. We navigate the logistics, customs, and authentication.</p>
           
           <div className="relative group flex flex-col md:flex-row items-stretch md:items-center bg-white md:bg-transparent shadow-sm md:shadow-none p-1 md:p-0">
@@ -85,7 +85,7 @@ export function Home() {
       <section className="py-16 md:py-24 px-6 md:px-8 max-w-[1600px] mx-auto section-spacing">
         <div className="flex justify-between items-end mb-10 md:mb-16">
           <div>
-            <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black leading-none uppercase">The Arrivals</h2>
+            <h2 className="text-[clamp(2.5rem,7vw,5rem)] font-black tracking-tighter text-black leading-none uppercase break-words">The Arrivals</h2>
             <p className="hidden md:block text-on-surface-variant font-light mt-4">Curated selections from our Lagos hub.</p>
           </div>
           <Link className="text-secondary font-black text-[10px] md:text-xs tracking-widest uppercase flex items-center gap-2 pb-1 border-b-2 border-secondary" to="/new-arrivals">View All Drops <span className="hidden md:inline material-symbols-outlined text-sm">north_east</span></Link>
@@ -99,7 +99,7 @@ export function Home() {
               <span className="text-[8px] md:text-[10px] font-black uppercase tracking-tighter">Verified Sourcing</span>
             </div>
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end">
-              <p className="text-white text-xl md:text-4xl font-black uppercase tracking-tighter mb-1 md:mb-4">SAINT Mxxxxxx x Ghost In The Shell</p>
+              <p className="text-white text-[clamp(1.25rem,4vw,3.5rem)] font-black uppercase tracking-tighter mb-1 md:mb-4 break-words">SAINT Mxxxxxx x Ghost In The Shell</p>
               <p className="text-white/70 text-[8px] md:text-xs font-light tracking-widest uppercase">Limited quantity available</p>
               <button className="hidden md:block mt-6 self-start bg-white text-black px-6 py-3 font-black text-[10px] lg:text-xs uppercase tracking-widest hover:bg-secondary hover:text-white transition-colors">Explore Piece</button>
             </div>
@@ -145,7 +145,7 @@ export function Home() {
         <div className="px-6 md:px-8 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
             <span className="text-secondary text-[10px] font-black uppercase tracking-[0.3em]">The Registry</span>
-            <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase leading-none mt-2">What Clients<br className="md:hidden"/> Are Saying</h2>
+            <h2 className="text-[clamp(2.5rem,7vw,5rem)] font-black tracking-tighter uppercase leading-none mt-2 break-words">What Clients<br className="md:hidden"/> Are Saying</h2>
           </div>
           <div className="hidden md:flex gap-4">
             <button className="w-12 h-12 flex items-center justify-center border border-white/20 hover:bg-white hover:text-black transition-colors"><span className="material-symbols-outlined">west</span></button>
@@ -207,7 +207,7 @@ export function Home() {
       <section className="relative h-[480px] md:h-[600px] flex items-center justify-center text-center px-6 overflow-hidden">
         <img alt="Texture Background" className="absolute inset-0 w-full h-full object-cover grayscale brightness-[0.3]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt5C37NP6ED4mIgqYXd2jDoF0ao_Zbsxxi0X3LR6ozSK-__WVMN6bRdoRQSmzYpxrd-KLOTeWdyeKj8I0cOLfxLXBPVjjLjIk3a_GjJomcDTMB-soDMfairNBHdrzuxhrqbGhpJOObZYUT-rN0pm7aHMiLo1hNrzWKWYcR0gR35W67SrKTQFDTqBqhiy7SDD_0NrpGtW3rk9qt2V_VsHfHitUMTdXUlfUAQRy5ZOxOtlfqd5CsTGAbrUCIomc2t7-tl9rlYmG1TBVq" />
         <div className="relative z-10 max-w-lg">
-          <h3 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none mb-6">Own the Court,<br/>Anywhere.</h3>
+          <h3 className="text-[clamp(2.5rem,7vw,5rem)] font-black text-white uppercase tracking-tighter leading-none mb-6 break-words">Own the Court,<br/>Anywhere.</h3>
           <p className="text-white/70 font-light text-xs md:text-sm tracking-[0.2em] uppercase mb-10">Access restricted retail ecosystems today.</p>
           <Link to="/request-a-find" className="inline-block border-2 border-white text-white px-10 py-4 font-black text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all active:scale-95">Request Invite</Link>
         </div>

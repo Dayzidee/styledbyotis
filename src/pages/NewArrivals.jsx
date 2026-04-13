@@ -27,7 +27,7 @@ export const NewArrivals = () => {
         <div className="relative z-10 w-full px-6 md:px-8 pb-12 md:pb-24 max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
           <div className="max-w-4xl">
             <span className="bg-secondary text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] mb-4 inline-block">The Lagos Archive Drop</span>
-            <h1 className="text-5xl md:text-9xl font-black tracking-tighter text-white uppercase leading-[0.85]">
+            <h1 className="text-[clamp(3rem,10vw,8rem)] font-black tracking-tighter text-white uppercase leading-[0.85] break-words">
               The Recent <br/> Intake
             </h1>
           </div>

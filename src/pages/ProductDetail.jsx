@@ -32,7 +32,7 @@ export function ProductDetail() {
           <span className="w-12 h-px bg-secondary"></span>
           <span className="text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase text-secondary">Elite Bridge Access</span>
         </div>
-        <h1 className="text-6xl md:text-9xl font-black uppercase tracking-tighter mb-6 leading-[0.85]">
+        <h1 className="text-[clamp(3.5rem,12vw,9rem)] font-black uppercase tracking-tighter mb-6 leading-[0.85] break-words">
           Front Row <br /><span className="text-secondary italic">Seats</span>
         </h1>
         <p className="text-on-surface-variant text-base md:text-xl font-light tracking-tight max-w-2xl leading-relaxed">

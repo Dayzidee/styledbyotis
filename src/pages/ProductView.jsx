@@ -74,12 +74,8 @@ export function ProductView() {
             <div className="mb-2">
               <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-secondary">{product.category}</span>
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] uppercase mb-6 drop-shadow-sm">
-              {product.title.split(' ').map((word, i) => (
-                <React.Fragment key={i}>
-                  {word} {i === 1 && <br className="hidden md:block" />}
-                </React.Fragment>
-              ))}
+            <h1 className="text-[clamp(2.5rem,8vw,5.5rem)] font-black tracking-tighter leading-[0.9] uppercase mb-6 drop-shadow-sm break-words overflow-wrap-anywhere">
+              {product.title}
             </h1>
             
             <div className="flex items-baseline gap-4 mb-10">
