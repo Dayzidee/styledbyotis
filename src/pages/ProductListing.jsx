@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SafeImage } from '../components/SafeImage';
 
 export function ProductListing() {
   return (
@@ -43,34 +44,34 @@ export function ProductListing() {
       {/* Asymmetrical Product Grid - 2 Column on Mobile */}
       <div className="grid grid-cols-2 md:grid-cols-12 gap-4 md:gap-8 lg:gap-12">
         {/* Featured Product (Large) */}
-        <Link to="/product/vintage-suede-jacket" className="col-span-2 md:col-span-12 lg:col-span-7 group relative">
+        <Link to="/product/saint-ghost-shirt" className="col-span-2 md:col-span-12 lg:col-span-7 group relative">
           <div className="aspect-[4/5] bg-surface-container-low overflow-hidden transition-all duration-700 group-hover:shadow-[0_40px_100px_rgba(0,0,0,0.2)]">
-            <img className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110" alt="Luxury brown suede jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2qPaoHCnqbd76xIjA63cWPWz5oqMojRCMEGyh-N7qfX2PhW7RnlFgr7Ewd3eU7x2LyeUxoCFeFGJfwR4jRVtLHrR7CerYLPtvktLlr1009SHvplN3ODHMykZXyiglilHFEWEXQEMiu2BA95-ZLH4P6baVBXjDE3aRwlmTNY32F9CuSh1afrnk0WsF0ms3878gir9eD7hDmZ5AlrW7U7wUJLCPnhhk2-FnNlEy4OHHFdXAi662fKk9Fbw6KSiMR7kxBrZ88EYVaZk-" />
+            <SafeImage className="transition-all duration-1000 group-hover:scale-110" alt="SAINT Mxxxxxx x Ghost In The Shell" src="/products/saint-shirt-front.jpg" />
             <div className="absolute inset-0 bg-black/0 md:group-hover:bg-black/20 transition-all flex items-center justify-center md:opacity-0 md:group-hover:opacity-100">
               <button className="hidden md:block bg-white text-black px-8 py-4 text-xs font-bold tracking-widest uppercase hover:bg-secondary hover:text-white transition-colors">
                 View Archive Piece
               </button>
             </div>
             <div className="absolute top-4 left-4 md:top-6 md:left-6 flex flex-col gap-1 md:gap-2">
-              <span className="bg-secondary text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[9px] font-black uppercase tracking-widest">Limited</span>
-              <span className="bg-black text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[9px] font-black uppercase tracking-widest">London Hub</span>
+              <span className="bg-secondary text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[9px] font-black uppercase tracking-widest">New Arrival</span>
+              <span className="bg-black text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[9px] font-black uppercase tracking-widest">Lagos Hub</span>
             </div>
           </div>
           <div className="mt-4 md:mt-8 flex justify-between items-start">
             <div>
-              <h3 className="text-xl md:text-2xl font-black uppercase tracking-tighter">Vintage Suede Artisan Jacket</h3>
-              <p className="text-on-tertiary-container text-[8px] md:text-xs font-bold uppercase tracking-widest mt-1 italic">Hand-Selected Italian Leather</p>
+              <h3 className="text-xl md:text-2xl font-black uppercase tracking-tighter">SAINT Mxxxxxx x Ghost In The Shell</h3>
+              <p className="text-on-tertiary-container text-[8px] md:text-xs font-bold uppercase tracking-widest mt-1 italic">Collaboration Piece</p>
             </div>
-            <span className="text-lg md:text-xl font-light tracking-tight text-secondary">$1,450</span>
+            <span className="text-lg md:text-xl font-light tracking-tight text-secondary">₦30,000</span>
           </div>
           <button className="md:hidden w-full mt-4 bg-primary text-white py-3 text-[10px] font-black uppercase tracking-widest">View Piece</button>
         </Link>
 
         {/* Side Product 1 */}
-        <Link to="/product/fragment-85-high" className="col-span-1 md:col-span-5 flex flex-col justify-center">
+        <Link to="/product/hellstar-wrestlemania" className="col-span-1 md:col-span-5 flex flex-col justify-center">
           <div className="group relative md:pl-12">
             <div className="aspect-square bg-surface-container-highest overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-black/5">
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Limited edition sneakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp4_OovWuMvz59jnsH4aErL9yDzwUx8S33GDHnfvMV7a075m17XAMw8EV6v1i2ffg1kXQQzQwRiGrIzMM-7AWfwqQWYXJPfkmoBySskRpCG7Y0AaXvAqYYOLXGPP6rA2GfoC5ZTTGw24QjpFs3CFtalNzHkXtUluMeUVBlFAxYBI1dNboKs4pDPjK0Gwt4_bcKMHpSdyOOdZvn5_wEHZTeCsx8d4feU07KWT3O2I92ZQs07a-uBriP1UKDNQ-kANlPkGhQibIAip_9" />
+              <SafeImage className="transition-transform duration-700 group-hover:scale-105" alt="Hellstar WrestleMania" src="/products/hellstar-front.jpg" />
               <div className="absolute inset-0 bg-black/0 md:group-hover:bg-black/20 transition-all flex items-center justify-center md:opacity-0 md:group-hover:opacity-100">
                 <button className="hidden md:block bg-white text-black px-6 py-3 text-[10px] font-bold tracking-widest uppercase hover:bg-secondary hover:text-white transition-colors">
                   Source in My Size
@@ -78,53 +79,53 @@ export function ProductListing() {
               </div>
             </div>
             <div className="mt-4 md:mt-6">
-              <span className="text-[8px] md:text-[10px] font-bold text-on-tertiary-container uppercase tracking-[0.2em]">Footwear</span>
-              <h3 className="text-sm md:text-lg font-black uppercase tracking-tighter mt-1">Fragment '85 High Retro</h3>
-              <p className="hidden md:block text-on-surface-variant font-light text-sm mt-1">Sourced from Tokyo Stockists.</p>
-              <div className="mt-1 md:mt-3 text-secondary font-bold text-sm md:text-base">$890</div>
+              <span className="text-[8px] md:text-[10px] font-bold text-on-tertiary-container uppercase tracking-[0.2em]">Graphic T-shirt</span>
+              <h3 className="text-sm md:text-lg font-black uppercase tracking-tighter mt-1">Hellstar WrestleMania</h3>
+              <p className="hidden md:block text-on-surface-variant font-light text-sm mt-1">Sourced from Lagos Hub.</p>
+              <div className="mt-1 md:mt-3 text-secondary font-bold text-sm md:text-base">₦30,000</div>
             </div>
             <button className="md:hidden w-full mt-3 border border-outline-variant py-2 text-[9px] font-black uppercase tracking-widest">Source</button>
           </div>
         </Link>
 
         {/* Row 2 - Asymmetric Spacing */}
-        <Link to="/product/selvage-denim-set" className="col-span-1 md:col-span-4 mt-6 md:mt-12">
+        <Link to="/product/sp5der-rugby-polo" className="col-span-1 md:col-span-4 mt-6 md:mt-12">
           <div className="group relative">
             <div className="aspect-[3/4] bg-surface-container overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-black/5">
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Raw indigo denim set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPjHyXRlZIp3XiT_9HW30uPYh6xCMpFOOa9tIGVEUKS2iK1TvZMKiJvf4BTd-nTB8cyVfqwSmGZdcGFjsIIWGpV1A7d8Ca-GFWYLzHXC9sSkZI4jQM7fc4GGJvACnWUe3-_jsAvnArZoWD4f2Pd2jHlJX7Jyr_wH0ZHYUTWu61OErw61jmXx1HnwIR1lJFWEiRb6TC9ZBgxffTGrcAS8nhhYenOGT6Q6QD5UA4YV3MAUPbGRp3S1jTJi9S6QE78ZKgucYTkgFkCDm5" />
+              <SafeImage className="transition-transform duration-700 group-hover:scale-105" alt="Sp5der Academy" src="/products/sp5der-rugby.jpg" />
             </div>
             <div className="mt-4 md:mt-6">
-              <h3 className="text-sm md:text-lg font-black uppercase tracking-tighter">Selvage Denim Set 01</h3>
-              <p className="hidden md:block text-on-surface-variant font-light text-sm mt-1">21oz Japanese Indigo.</p>
-              <div className="mt-1 md:mt-3 text-on-surface font-bold text-sm md:text-base">$550</div>
+              <h3 className="text-sm md:text-lg font-black uppercase tracking-tighter">Sp5der Academy Rugby Polo</h3>
+              <p className="hidden md:block text-on-surface-variant font-light text-sm mt-1">Navy with Contrast Collar.</p>
+              <div className="mt-1 md:mt-3 text-on-surface font-bold text-sm md:text-base">₦60,000</div>
             </div>
             <button className="md:hidden w-full mt-3 border border-outline-variant py-2 text-[9px] font-black uppercase tracking-widest">Source</button>
           </div>
         </Link>
 
-        <Link to="/product/bone-canvas-high" className="col-span-1 md:col-span-4 mt-6 md:mt-24">
+        <Link to="/product/washed-light-blue-jeans" className="col-span-1 md:col-span-4 mt-6 md:mt-24">
           <div className="group relative">
             <div className="aspect-[3/4] bg-surface-container-low overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-black/5">
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="White premium sneakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgwa_d8ZMmlvU467xp1i8eJqg_6dV7qRQKGtgEgAb5BLNAwiNSsRh71wNZDxCtdZ7BGGD3kND5QZXfSHxHYfW91UdwM9EE9Si7EUcpMGkOa7SmMooS5cvUur-x7ErjOrg5Go9bE7PP_aWz1kzPbV79YhsqTWQypZT9qJO140k_ZSh8FTyVx57XeCQNs3oLYO1MypkaU0KPHBEWKHMmpV6tuRGL5uPd8Xd_IvGZyURgMN8UOa4Ht9wn6n7c2UM85vd3JJc8tiIxOM0k" />
+              <SafeImage className="transition-transform duration-700 group-hover:scale-105" alt="Washed light blue jeans" src="/products/washed-jeans.jpg" />
             </div>
             <div className="mt-4 md:mt-6">
-              <h3 className="text-sm md:text-lg font-black uppercase tracking-tighter">Bone Canvas High-Top</h3>
-              <p className="hidden md:block text-on-surface-variant font-light text-sm mt-1">Available in Paris Hub.</p>
-              <div className="mt-1 md:mt-3 text-on-surface font-bold text-sm md:text-base">$320</div>
+              <h3 className="text-sm md:text-lg font-black uppercase tracking-tighter">Classic Washed Denim</h3>
+              <p className="hidden md:block text-on-surface-variant font-light text-sm mt-1">Slim Tapered Fit.</p>
+              <div className="mt-1 md:mt-3 text-on-surface font-bold text-sm md:text-base">₦45,000</div>
             </div>
             <button className="md:hidden w-full mt-3 border border-outline-variant py-2 text-[9px] font-black uppercase tracking-widest">Source</button>
           </div>
         </Link>
 
-        <Link to="/product/midnight-biker" className="col-span-2 md:col-span-4 mt-6 md:mt-12">
+        <Link to="/product/scimitar-cargo-pants" className="col-span-2 md:col-span-4 mt-6 md:mt-12">
           <div className="group relative">
             <div className="aspect-[4/3] md:aspect-[3/4] bg-surface-container-highest overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-black/5">
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Black luxury leather biker jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTG0sfZSFq_bS3b80Z6e7fjIm1SsIcIB5fb0DJ82FxsEL9Fuy-8oXcuolCT2e65REhTf9DPEvTZUWOWeB-RjLi302jTb4ouUUQpeOkBI-n8LWy0RPzfk9oVSdEnE3UK9uzZp9G6oUos4_TFONzyUPT9jXhNFp-NozCCvxiQdFgwoHbi5ZTrZlBSrXH2Y5V4D6Papea7xR9A89eCSEEBhkBmYENzfOkYOTft88Cm78eM8-MRmd0OeqH0KzA0XphEDYamAr5Q27ORE4t" />
+              <SafeImage className="transition-transform duration-700 group-hover:scale-105" alt="Scimitar cargo pants" src="/products/scimitar-khaki.jpg" />
             </div>
             <div className="mt-4 md:mt-6">
-              <h1 className="text-xl md:text-lg font-black uppercase tracking-tighter">Midnight Biker Archive</h1>
-              <p className="hidden md:block text-on-surface-variant font-light text-sm mt-1">Calfskin Heritage Edition.</p>
-              <div className="mt-1 md:mt-3 text-secondary font-bold text-sm md:text-base">$2,100</div>
+              <h1 className="text-xl md:text-lg font-black uppercase tracking-tighter">Deconstructed Scimitar Pants</h1>
+              <p className="hidden md:block text-on-surface-variant font-light text-sm mt-1">Wide Leg Utility.</p>
+              <div className="mt-1 md:mt-3 text-secondary font-bold text-sm md:text-base">₦45,000</div>
             </div>
             <button className="md:hidden w-full mt-4 bg-primary text-white py-3 text-[10px] font-black uppercase tracking-widest">Source Piece</button>
           </div>

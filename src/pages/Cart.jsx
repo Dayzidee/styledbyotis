@@ -10,7 +10,7 @@ export function Cart() {
   ];
 
   const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
-  const shipping = 45.00; // Flat sourcing/shipping fee
+  const shipping = 5000; // Flat sourcing/shipping fee
 
   return (
     <main className="pt-24 md:pt-32 min-h-screen bg-background pb-24">
@@ -48,7 +48,7 @@ export function Cart() {
                         <span className="px-4 py-2 font-bold text-sm">{item.quantity}</span>
                         <button className="px-4 py-2 hover:bg-black hover:text-white transition-colors">+</button>
                       </div>
-                      <span className="text-xl font-bold">${item.price.toLocaleString()}</span>
+                      <span className="text-xl font-bold">₦{item.price.toLocaleString()}</span>
                     </div>
                   </div>
                 </div>
@@ -69,11 +69,11 @@ export function Cart() {
               <div className="space-y-6 mb-10">
                 <div className="flex justify-between items-center text-sm font-light">
                   <span className="uppercase tracking-widest text-[10px] font-bold">Subtotal</span>
-                  <span className="font-bold">${subtotal.toLocaleString()}</span>
+                  <span className="font-bold">₦{subtotal.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between items-center text-sm font-light">
                   <span className="uppercase tracking-widest text-[10px] font-bold">Global Sourcing Fee</span>
-                  <span className="font-bold">${shipping.toLocaleString()}</span>
+                  <span className="font-bold">₦{shipping.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between items-center text-sm font-light">
                   <span className="uppercase tracking-widest text-[10px] font-bold">Estimated Import Duties</span>
@@ -81,7 +81,7 @@ export function Cart() {
                 </div>
                 <div className="pt-6 border-t border-black/5 flex justify-between items-center">
                   <span className="text-lg font-black uppercase tracking-tighter">Total</span>
-                  <span className="text-2xl font-black text-secondary">${(subtotal + shipping).toLocaleString()}</span>
+                  <span className="text-2xl font-black text-secondary">₦{(subtotal + shipping).toLocaleString()}</span>
                 </div>
               </div>
 

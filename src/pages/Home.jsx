@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SafeImage } from '../components/SafeImage';
+import { products } from '../data/products';
 
 export function Home() {
   return (
@@ -24,9 +26,9 @@ export function Home() {
           <div className="asphalt-texture absolute inset-0 hidden md:block"></div>
           
           <div className="max-w-xl relative z-20">
-            <span className="inline-block bg-secondary text-white text-[9px] md:text-[10px] font-black tracking-[0.2em] px-3 py-1 mb-4 md:mb-6 uppercase">Global Sourcing Engine</span>
+            <span className="inline-block bg-secondary text-white text-[9px] md:text-[10px] font-black tracking-[0.2em] px-3 py-1 mb-4 md:mb-6 uppercase">Lagos Sourcing Engine</span>
             <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white md:text-black leading-[0.9] mb-6 md:mb-8 uppercase">Your Official<br/>Global Bridge<br/>To Retail.</h1>
-            <p className="text-neutral-300 md:text-on-surface-variant text-sm md:text-lg font-light leading-relaxed mb-8 md:mb-10 max-w-md">No borders. No markups. Otis sources the world's most coveted drops directly from UK, US, and EU boutiques to your doorstep.</p>
+            <p className="text-neutral-300 md:text-on-surface-variant text-sm md:text-lg font-light leading-relaxed mb-8 md:mb-10 max-w-md">No borders. No markups. Otis sources the world's most coveted drops directly from UK, US, and EU boutiques to Lagos.</p>
             <div className="flex flex-col sm:flex-row gap-4 sm:space-x-4">
               <Link to="/shop" className="bg-secondary md:bg-primary text-white px-8 py-4 font-bold text-xs md:text-sm tracking-widest uppercase hover:scale-105 transition-transform active:scale-95 duration-200 text-center">Start Sourcing</Link>
               <Link to="/new-arrivals" className="hidden md:flex border-b-2 border-tertiary text-black font-bold px-4 py-4 text-sm items-center space-x-2">
@@ -48,7 +50,7 @@ export function Home() {
       </section>
 
       {/* The Bridge - Feature Section */}
-      <section className="px-6 md:px-8 py-16 md:py-24 bg-surface-container-low relative">
+      <section className="px-6 md:px-8 py-16 md:py-24 bg-surface-container-low relative section-spacing">
         <div className="wood-grain absolute inset-0 opacity-20 hidden md:block"></div>
         <div className="max-w-4xl mx-auto relative z-10 text-center md:text-center">
           <span className="text-on-tertiary-container font-black text-[10px] uppercase tracking-widest block mb-2 md:hidden">Feature: The Bridge</span>
@@ -80,65 +82,66 @@ export function Home() {
       </section>
 
       {/* The Recent Drops - Responsive Grid */}
-      <section className="py-16 md:py-24 px-6 md:px-8 max-w-[1600px] mx-auto">
+      <section className="py-16 md:py-24 px-6 md:px-8 max-w-[1600px] mx-auto section-spacing">
         <div className="flex justify-between items-end mb-10 md:mb-16">
           <div>
             <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black leading-none uppercase">The Arrivals</h2>
-            <p className="hidden md:block text-on-surface-variant font-light mt-4">Curated selections from our London &amp; New York hubs.</p>
+            <p className="hidden md:block text-on-surface-variant font-light mt-4">Curated selections from our Lagos hub.</p>
           </div>
           <Link className="text-secondary font-black text-[10px] md:text-xs tracking-widest uppercase flex items-center gap-2 pb-1 border-b-2 border-secondary" to="/new-arrivals">View All Drops <span className="hidden md:inline material-symbols-outlined text-sm">north_east</span></Link>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-12 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-12 gap-8 md:gap-12">
           {/* Main Feature Drop */}
-          <Link to="/product/vintage-suede-jacket" className="col-span-2 md:col-span-7 group cursor-pointer relative aspect-[4/5] overflow-hidden bg-surface-container shadow-sm hover:shadow-2xl transition-all duration-700">
-            <img alt="Suede Archive" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlTrGdRSxK6p-Iab_UCALTYDPMBAOyMwkxRr4bXpaUaWQWYEJQt02276tH3Ou0kn2popVyDGhyir87RNw1yiul91FtXN1zdsRrjFSKDhLHxxGjrQXpWrWSqUpUwHKi0qu8O_5SdXi3funDH-el8v4px_63j58-I2erlVGQc4VfA0J8kDOOo5pdDc6uxMY_gcTHVSptM20FpiPPAoOvKFRX9PA2BMc-qesPm355CORIboVoKzVqXVkTKHG0HGIRybyIc9bIQu21oVCB" />
+          <Link to="/product/saint-ghost-shirt" className="col-span-2 md:col-span-7 group cursor-pointer relative aspect-[4/5] overflow-hidden bg-surface-container shadow-sm hover:shadow-2xl transition-all duration-700">
+            <SafeImage alt="SAINT Mxxxxxx x Ghost In The Shell" className="transition-transform duration-1000 group-hover:scale-110" src="/products/saint-shirt-front.jpg" />
             <div className="absolute top-4 left-4 bg-white px-2 py-1 border border-black/5">
               <span className="text-[8px] md:text-[10px] font-black uppercase tracking-tighter">Verified Sourcing</span>
             </div>
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end">
-              <p className="text-white text-xl md:text-4xl font-black uppercase tracking-tighter mb-1 md:mb-4">Suede Archive '24</p>
+              <p className="text-white text-xl md:text-4xl font-black uppercase tracking-tighter mb-1 md:mb-4">SAINT Mxxxxxx x Ghost In The Shell</p>
               <p className="text-white/70 text-[8px] md:text-xs font-light tracking-widest uppercase">Limited quantity available</p>
               <button className="hidden md:block mt-6 self-start bg-white text-black px-6 py-3 font-black text-[10px] lg:text-xs uppercase tracking-widest hover:bg-secondary hover:text-white transition-colors">Explore Piece</button>
             </div>
           </Link>
 
           {/* Secondary Drops */}
-          <Link to="/product/fragment-85-high" className="col-span-1 md:col-span-5 aspect-[3/4] md:aspect-auto mt-4 md:mt-0 relative overflow-hidden bg-surface-container group cursor-pointer border border-black/5">
-            <img alt="Tokyo Exclusive" className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3kXyP0pAdxTJZWNLZLnrmCD-IydI1rkHT1TXdEKwFykTLxb37yoE1kp2woN-wihvZMQ8kzzEwq1Drj51taxPgLZxqsJC6gP449cgbYshTPFnNeCMOYvuAQfMVuYCC6MxChSjdIpF36SnTkiUfkGhgXFZ2mwBc0Ab_UFNrUZGkXi0bIHt-JORUdaipzWyDUQd9gxNb8h0-aN6d50ORZOpwGe3Dg9W0s6qoGsWVc7z2ry05lI0TfVfjmjwRgijFEajTTbfl6A1c8xNr" />
-            <div className="p-3 md:p-6 absolute bottom-0 bg-white/90 backdrop-blur w-full flex justify-between items-end translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-              <div>
-                <span className="text-[9px] md:text-[10px] font-black block uppercase tracking-tighter">Tokyo Exclusive</span>
-                <span className="text-xs md:text-lg font-black">$340.00</span>
+          <div className="col-span-1 md:col-span-5 flex flex-col gap-8 md:gap-12">
+            <Link to="/product/hellstar-wrestlemania" className="aspect-[3/4] relative overflow-hidden bg-surface-container group cursor-pointer border border-black/5">
+              <SafeImage alt="Hellstar WrestleMania" className="transition-all duration-1000 group-hover:scale-110" src="/products/hellstar-front.jpg" />
+              <div className="p-3 md:p-6 absolute bottom-0 bg-white/90 backdrop-blur w-full flex justify-between items-end translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                <div>
+                  <span className="text-[9px] md:text-[10px] font-black block uppercase tracking-tighter">Hellstar</span>
+                  <span className="text-xs md:text-lg font-black">₦30,000</span>
+                </div>
+                <span className="material-symbols-outlined text-lg">arrow_outward</span>
               </div>
-              <span className="material-symbols-outlined text-lg">arrow_outward</span>
-            </div>
-            {/* Mobile label */}
-            <div className="md:hidden p-3 absolute bottom-0 bg-white/95 backdrop-blur w-full">
-              <span className="text-[9px] font-black block uppercase tracking-tighter">Tokyo Exclusive</span>
-              <span className="text-[11px] font-light text-on-surface-variant">$340.00</span>
-            </div>
-          </Link>
+              <div className="md:hidden p-3 absolute bottom-0 bg-white/95 backdrop-blur w-full">
+                <span className="text-[9px] font-black block uppercase tracking-tighter">Hellstar</span>
+                <span className="text-[11px] font-light text-on-surface-variant">₦30,000</span>
+              </div>
+            </Link>
 
-          <Link to="/product/selvage-denim-set" className="col-span-1 md:col-span-5 md:col-start-8 aspect-[3/4] md:aspect-auto relative overflow-hidden bg-surface-container group cursor-pointer lg:-mt-24">
-            <img alt="Selvedge Denim" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjmHNnA5UTpOgrW-6Yck-mPNd376oiRaxG2q719QiEUeqwEgN7ZzOotvbBlixPXOuE7sGXcBf9_cUl3ntoZrsmNPdxR8trgBn2HvwFj1mxqID-ktiMPQJCwk3pg0rzOJA4uGaU8cOeMmrC2h0Mjm2kwtSLua5AVCc1qq_4D-5Efn2b1c4rUAtuMf3p9UHiGsM3SrTNQaAAg3HIGr7HCaocN3yo8sBCIww4A5hf_ts_pNorMLqQWlZfAiFfJgLOiNpg6PplqzI_8RuF" />
-            <div className="p-3 md:p-6 absolute bottom-0 bg-white/90 backdrop-blur w-full flex justify-between items-end translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all">
-              <div>
-                <span className="text-[9px] md:text-[10px] font-black block uppercase tracking-tighter">Selvedge Denim</span>
-                <span className="text-xs md:text-lg font-black">$580.00</span>
+            <Link to="/product/sp5der-rugby-polo" className="aspect-[3/4] relative overflow-hidden bg-surface-container group cursor-pointer">
+              <SafeImage alt="Sp5der Academy" className="transition-transform duration-700 group-hover:scale-110" src="/products/sp5der-rugby.jpg" />
+              <div className="p-3 md:p-6 absolute bottom-0 bg-white/90 backdrop-blur w-full flex justify-between items-end translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all">
+                <div>
+                  <span className="text-[9px] md:text-[10px] font-black block uppercase tracking-tighter">Sp5der Academy</span>
+                  <span className="text-xs md:text-lg font-black">₦60,000</span>
+                </div>
+                <span className="material-symbols-outlined text-lg">arrow_outward</span>
               </div>
-              <span className="material-symbols-outlined text-lg">arrow_outward</span>
-            </div>
-            <div className="md:hidden p-3 absolute bottom-0 bg-white/95 backdrop-blur w-full">
-              <span className="text-[9px] font-black block uppercase tracking-tighter">Selvedge Denim</span>
-              <span className="text-[11px] font-light text-on-surface-variant">$580.00</span>
-            </div>
-          </Link>
+              <div className="md:hidden p-3 absolute bottom-0 bg-white/95 backdrop-blur w-full">
+                <span className="text-[9px] font-black block uppercase tracking-tighter">Sp5der Academy</span>
+                <span className="text-[11px] font-light text-on-surface-variant">₦60,000</span>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Trust Signals / Testimonials */}
-      <section className="py-20 md:py-32 bg-primary text-on-primary">
+      <section className="py-20 md:py-32 bg-primary text-on-primary section-spacing">
         <div className="px-6 md:px-8 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
             <span className="text-secondary text-[10px] font-black uppercase tracking-[0.3em]">The Registry</span>

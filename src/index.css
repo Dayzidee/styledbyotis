@@ -67,7 +67,12 @@
   .editorial-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .editorial-grid {
+      gap: 3rem;
+    }
   }
 
   .glass-panel {
@@ -152,5 +157,35 @@
     background: #bb001e;
     cursor: pointer;
     border: none;
+  }
+  
+  /* Layout Fixes */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  .section-spacing {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .section-spacing {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }

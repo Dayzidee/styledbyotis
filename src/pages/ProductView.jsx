@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { products } from '../data/products';
+import { SafeImage } from '../components/SafeImage';
 
 export function ProductView() {
   const { id } = useParams();
@@ -41,9 +42,9 @@ export function ProductView() {
           {/* Product Gallery (Asymmetric Layout) */}
           <div className="lg:col-span-7 space-y-8">
             <div className="relative aspect-[4/5] overflow-hidden bg-surface-container-low group">
-              <img 
+              <SafeImage 
                 alt={product.title} 
-                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                className="transition-transform duration-1000 group-hover:scale-110"
                 src={product.images[0]}
               />
               <div className="absolute top-6 left-6 bg-black text-white px-4 py-1 text-[10px] font-bold tracking-[0.2em] uppercase">
@@ -52,16 +53,16 @@ export function ProductView() {
             </div>
             <div className="grid grid-cols-2 gap-4 md:gap-8">
               <div className="aspect-square bg-surface-container-low overflow-hidden group">
-                <img 
+                <SafeImage 
                   alt="Detail 1" 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  className="hover:scale-105 transition-transform duration-700"
                   src={product.images[1]}
                 />
               </div>
               <div className="aspect-square bg-surface-container-low overflow-hidden group relative lg:top-12">
-                <img 
+                <SafeImage 
                   alt="Detail 2" 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  className="hover:scale-105 transition-transform duration-700"
                   src={product.images[2]}
                 />
               </div>
@@ -82,8 +83,8 @@ export function ProductView() {
             </h1>
             
             <div className="flex items-baseline gap-4 mb-10">
-              <span className="text-2xl md:text-3xl font-bold">${product.price.toLocaleString()}</span>
-              <span className="text-on-surface-variant/40 text-sm line-through font-light">${product.originalPrice.toLocaleString()}</span>
+              <span className="text-2xl md:text-3xl font-bold">₦{product.price.toLocaleString()}</span>
+              <span className="text-on-surface-variant/40 text-sm line-through font-light">₦{product.originalPrice.toLocaleString()}</span>
             </div>
 
             {/* CTA Section */}
@@ -153,9 +154,9 @@ export function ProductView() {
             <Link to="/shop" className="inline-block border-b-2 border-secondary pb-1 text-secondary font-bold uppercase text-[10px] tracking-widest hover:text-black hover:border-black transition-all">Explore the Archive</Link>
           </div>
           <div className="order-1 md:order-2 aspect-video bg-surface-container-low overflow-hidden group">
-            <img 
+            <SafeImage 
               alt="Curation Process" 
-              className="w-full h-full object-cover grayscale contrast-125 transition-transform duration-1000 group-hover:scale-105"
+              className="grayscale contrast-125 transition-transform duration-1000 group-hover:scale-105"
               src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1200"
             />
           </div>

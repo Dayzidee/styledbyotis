@@ -15,8 +15,8 @@ export function Footer() {
         </div>
         <div className="md:text-right">
           <p className="text-[11px] uppercase tracking-widest font-light text-neutral-500 mb-6">Direct Inquiries</p>
-          <a className="group inline-flex items-center gap-4" href="https://wa.me/2340000000">
-            <span className="text-lg md:text-2xl font-bold group-hover:text-secondary transition-colors transition-opacity opacity-80 hover:opacity-100">Contact (+234) via WhatsApp</span>
+          <a className="group inline-flex items-center gap-4" href="https://wa.me/2348103957268">
+            <span className="text-lg md:text-2xl font-bold group-hover:text-secondary transition-colors transition-opacity opacity-80 hover:opacity-100">Contact (+234) 810 395 7268</span>
             <div className="w-12 h-12 bg-white text-black flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all">
               <span className="material-symbols-outlined">chat</span>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SafeImage } from '../components/SafeImage';
 
 export const NewArrivals = () => {
   return (
@@ -25,9 +26,9 @@ export const NewArrivals = () => {
         </div>
         <div className="relative z-10 w-full px-6 md:px-8 pb-12 md:pb-24 max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
           <div className="max-w-4xl">
-            <span className="bg-secondary text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] mb-4 inline-block">The London Archive Drop</span>
+            <span className="bg-secondary text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] mb-4 inline-block">The Lagos Archive Drop</span>
             <h1 className="text-5xl md:text-9xl font-black tracking-tighter text-white uppercase leading-[0.85]">
-              The Recent <br/> Drops
+              The Recent <br/> Intake
             </h1>
           </div>
           <div className="flex flex-col items-start md:items-end text-white max-w-xs md:text-right">
@@ -43,10 +44,10 @@ export const NewArrivals = () => {
       </section>
 
       {/* Asphalt Texture Transition Section */}
-      <section className="asphalt-texture bg-surface py-16 md:py-24 px-6 md:px-8 relative">
+      <section className="asphalt-texture bg-surface py-16 md:py-24 px-6 md:px-8 relative section-spacing">
         <div className="max-w-[1920px] mx-auto relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-baseline mb-10 md:mb-16 gap-6">
-            <h2 className="text-3xl md:text-4xl font-black tracking-tighter uppercase text-on-surface">Fresh Intake / NYC & LDN</h2>
+            <h2 className="text-3xl md:text-4xl font-black tracking-tighter uppercase text-on-surface">Fresh Intake / LAGOS HUB</h2>
             {/* Horizontal Scroll on Mobile */}
             <div className="flex space-x-6 md:space-x-8 text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-on-surface-variant overflow-x-auto no-scrollbar w-full md:w-auto pb-4 md:pb-0">
               <button className="text-primary border-b border-primary shrink-0">All Drops</button>
@@ -59,53 +60,53 @@ export const NewArrivals = () => {
           {/* Product Grid: Asymmetric Layout - 2 Column on Mobile */}
           <div className="grid grid-cols-2 md:grid-cols-12 gap-6 md:gap-4 lg:gap-12">
             {/* Product Card 1: Large Featured */}
-            <Link to="/product/air-max-volts" className="col-span-2 md:col-span-7 flex flex-col group">
+            <Link to="/product/saint-ghost-shirt" className="col-span-2 md:col-span-7 flex flex-col group">
               <div className="relative overflow-hidden aspect-[4/5] bg-surface-container-low transition-all duration-700 font-bold group-hover:shadow-[0_40px_100px_rgba(0,0,0,0.1)]">
-                <img 
-                  className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110" 
-                  alt="Limited edition sneakers" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYUOUx9onSjE5V4XyJYfIWyuBJQsb-Xaus475pi5m8-3kpVLZu593rjfGeB_x1e4oG2DHwZvyJszKYKCQdMqliya7G_Bx5oRVVqmRw4eF7Y_AH04qx1ZI5QBbM2AMiIOuUZHpKGBNV8PkZeEt2DNOYoaRTiJ-kihVY0NVaUZP3DfwAmnqne29wAYk76LGd4M_xTGAjU62DNn-gFsg5NkiUDJpI9O9o9KyvXq0inoqtjqkfr1KbcLtieD5j94wGpeag5OB11hVI6y5O"
+                <SafeImage 
+                  className="transition-all duration-1000 group-hover:scale-110" 
+                  alt="SAINT Mxxxxxx x Ghost In The Shell" 
+                  src="/products/saint-shirt-front.jpg"
                 />
                 <div className="absolute top-4 left-4 md:top-6 md:left-6 flex flex-col gap-1 md:gap-2">
                   <span className="bg-secondary text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[9px] font-black uppercase tracking-widest">Limited Drop</span>
-                  <span className="bg-black text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[9px] font-black uppercase tracking-widest">Sourced: NYC</span>
+                  <span className="bg-black text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[9px] font-black uppercase tracking-widest">Sourced: Lagos</span>
                 </div>
               </div>
               <div className="mt-4 md:mt-6 flex justify-between items-start">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-bold tracking-tight uppercase text-on-surface">Air Max 'Volts' Retro</h3>
+                  <h3 className="text-xl md:text-2xl font-bold tracking-tight uppercase text-on-surface">SAINT Mxxxxxx x Ghost In The Shell</h3>
                   <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mt-1">Verified Pristine</p>
                 </div>
-                <span className="text-base md:text-lg font-light text-on-surface">$420.00</span>
+                <span className="text-base md:text-lg font-light text-on-surface">₦30,000</span>
               </div>
             </Link>
 
             {/* Product Card 2: Medium */}
-            <Link to="/product/court-legacy-hi" className="col-span-1 md:col-span-5 md:mt-24 flex flex-col group mt-8 md:mt-24">
+            <Link to="/product/hellstar-wrestlemania" className="col-span-1 md:col-span-5 md:mt-24 flex flex-col group mt-8 md:mt-24">
               <div className="relative overflow-hidden aspect-square bg-surface-container-high transition-all duration-700">
-                <img 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                  alt="High-top sneakers" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2Rf_XrRMFnlrIaVxwiV7x0RUE_jQhe6VgOJlskCHmWj8ewc9x5QCZi5TNCLlGPtNJ8KN_1qjpJq-pMNeVwLVhZS4DjErLrTHo-LdDKMUmU2oW0GY3G9UcDVOTU9qGqokIQubvqHDGWDGVt0Qd_ah2MupKwa8_3DpkfKMRYpInGFfd0qpQXb1HhIIEtHAeztsKtY-zHqxdCVnHitpFyP-JXzS4-zrTWxs6m85SCSTHVR-IPqILsnSUIYyUid3bI49ZGN45eVnwHbCq"
+                <SafeImage 
+                  className="transition-transform duration-700 group-hover:scale-105" 
+                  alt="Hellstar WrestleMania" 
+                  src="/products/hellstar-front.jpg"
                 />
                 <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6">
-                  <span className="bg-black text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[9px] font-black uppercase tracking-widest">Sourced: London</span>
+                  <span className="bg-black text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[9px] font-black uppercase tracking-widest">Sourced: Lagos</span>
                 </div>
               </div>
               <div className="mt-4 md:mt-6 flex justify-between items-start">
                 <div>
-                  <h3 className="text-sm md:text-2xl font-bold tracking-tight uppercase text-on-surface">Court Legacy Hi</h3>
+                  <h3 className="text-sm md:text-2xl font-bold tracking-tight uppercase text-on-surface">Hellstar WrestleMania</h3>
                   <p className="text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mt-1">Limited Release</p>
                 </div>
-                <span className="text-sm md:text-lg font-light text-on-surface">$385.00</span>
+                <span className="text-sm md:text-lg font-light text-on-surface">₦30,000</span>
               </div>
             </Link>
 
             {/* Product Card 3: Sold Out Small */}
             <div className="col-span-1 md:col-span-4 flex flex-col group">
               <div className="relative overflow-hidden aspect-[3/4] bg-surface-container transition-all duration-700 grayscale hover:grayscale-0">
-                <img 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                <SafeImage 
+                  className="transition-transform duration-700 group-hover:scale-105" 
                   alt="Leather handbag" 
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt8X7YZqtw1JAFsub_yNBvKXWmH1DklTkj8vlrX9GAIosdcORbhrjW0ObDsl0qzy5a0hPhZUsG2aaEH6ZLUtdMwkHcS_uWZYYRbFOSVR8jAABU9h27jiJD1BE5pTkkXo8UZ7BiSgESB5pvSaVvkhy0cRsKl_9Z-nVDBKrS_90QlwIr5y9QbPPgjNEK3_9AAiqNazhUiI1eXarHDnWOrEw0mkbjjaat10vICuSMTrPua7iNJ27yBCUhhl1ibP94UUZ6FQpliFhr6OxW"
                 />
@@ -118,17 +119,17 @@ export const NewArrivals = () => {
                   <h3 className="text-sm md:text-xl font-bold tracking-tight uppercase text-on-surface">Soho Archive Tote</h3>
                   <p className="text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mt-1">Waitlist Only</p>
                 </div>
-                <span className="text-sm md:text-lg font-light text-on-surface">$1,200</span>
+                <span className="text-sm md:text-lg font-light text-on-surface">₦1,200,000</span>
               </div>
             </div>
 
             {/* Product Card 4: Medium Vertical */}
-            <Link to="/product/essential-box-tee" className="col-span-1 md:col-span-4 md:mt-12 flex flex-col group mt-8 md:mt-12">
+            <Link to="/product/sp5der-rugby-polo" className="col-span-1 md:col-span-4 md:mt-12 flex flex-col group mt-8 md:mt-12">
               <div className="relative overflow-hidden aspect-[3/4] bg-surface-container-highest transition-all duration-700 font-bold group-hover:shadow-[0_40px_100px_rgba(0,0,0,0.1)]">
-                <img 
-                  className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110" 
-                  alt="Premium t-shirt" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2-wFKFQDPONUNj2bfmK75RYzZgkuzOqSt0Z9Gw-vf2ivmTi4m-1-BxW_kPp_h7WdG4TBnuWkoxwKINaBtHe4eVrHS97bjFZhVOhZBr354KkgG9JgapH5vNcfnFASG1bsCU0kEdh5dpgIrlS9Qn9xJ-pM-csx2aZvwxy_9EQnaEUBCGYRWdEp24HnsNpcg0IayCR4Ulp8UaFCKT1AF8de19wFNt2Et_j-WTSNiJe8dlX5sdjJWOttonW_ezdXMRqTqhhw7Rj93EVg5"
+                <SafeImage 
+                  className="transition-all duration-1000 group-hover:scale-110" 
+                  alt="Sp5der Academy" 
+                  src="/products/sp5der-rugby.jpg"
                 />
                 <div className="absolute top-4 left-4 md:top-6 md:left-6">
                   <span className="bg-secondary text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[9px] font-black uppercase tracking-widest">New Arrival</span>
@@ -136,20 +137,20 @@ export const NewArrivals = () => {
               </div>
               <div className="mt-4 md:mt-6 flex justify-between items-start">
                 <div>
-                  <h3 className="text-sm md:text-xl font-bold tracking-tight uppercase text-on-surface">Essential Box Tee</h3>
-                  <p className="text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mt-1">Sourced: Manhattan</p>
+                  <h3 className="text-sm md:text-xl font-bold tracking-tight uppercase text-on-surface">Sp5der Academy Polo</h3>
+                  <p className="text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mt-1">Sourced: Lagos</p>
                 </div>
-                <span className="text-sm md:text-lg font-light text-on-surface">$95.00</span>
+                <span className="text-sm md:text-lg font-light text-on-surface">₦60,000</span>
               </div>
             </Link>
 
             {/* Product Card 5: Grid Square */}
-            <Link to="/product/vapor-flare-2" className="col-span-2 md:col-span-4 flex flex-col group mt-8 md:mt-0">
+            <Link to="/product/scimitar-cargo-pants" className="col-span-2 md:col-span-4 flex flex-col group mt-8 md:mt-0">
               <div className="relative overflow-hidden aspect-video md:aspect-square bg-surface-container-low transition-all duration-700">
-                <img 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                  alt="Athletic shoe" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmXJTMu3frBOxI2Pw4EoYEHyjoXlP537JCigHDj9lwNRHFQPlq_KsZDvh8ozyOK0KJTuzKykGrQp7O8nRsxFcGaG7g1xucxhnU0cBUVIam1VUx_exTXKIcf19-_i4ioFEjFPHlnkOKOYpMb1kJXfw7Ps1HWbBjWub-Ty64RiMQb0fXq8yVLFc9W-GhGL6cVLhCFcoPQRpjGtB6kVzLMgOlsNWKo-bHu2BEvh2dRtlRF-Hy3tkxnjEaLCNvRIJlhHZ39jm7LirjGVyx"
+                <SafeImage 
+                  className="transition-transform duration-700 group-hover:scale-105" 
+                  alt="Scimitar cargo pants" 
+                  src="/products/scimitar-khaki.jpg"
                 />
                 <div className="absolute top-4 right-4 md:top-6 md:right-6">
                   <span className="bg-secondary text-white px-2 py-0.5 md:px-3 md:py-1 text-[8px] md:text-[9px] font-black uppercase tracking-widest">Last One</span>
@@ -157,10 +158,10 @@ export const NewArrivals = () => {
               </div>
               <div className="mt-4 md:mt-6 flex justify-between items-start">
                 <div>
-                  <h3 className="text-xl md:text-xl font-bold tracking-tight uppercase text-on-surface">Vapor Flare 2.0</h3>
-                  <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mt-1">Sourced: Camden</p>
+                  <h3 className="text-xl md:text-xl font-bold tracking-tight uppercase text-on-surface">Scimitar Cargo Pants</h3>
+                  <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mt-1">Sourced: Lagos</p>
                 </div>
-                <span className="text-lg md:text-lg font-light text-on-surface">$210.00</span>
+                <span className="text-lg md:text-lg font-light text-on-surface">₦45,000</span>
               </div>
             </Link>
           </div>
@@ -168,7 +169,7 @@ export const NewArrivals = () => {
       </section>
 
       {/* Sourcing Credibility Section */}
-      <section className="py-20 md:py-32 px-6 md:px-8 bg-black text-white overflow-hidden relative">
+      <section className="py-20 md:py-32 px-6 md:px-8 bg-black text-white overflow-hidden relative section-spacing">
         <div className="absolute top-0 right-0 w-full md:w-1/2 h-half md:h-full asphalt-texture opacity-20 pointer-events-none"></div>
         <div className="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center relative z-10">
           <div className="relative">
@@ -185,7 +186,7 @@ export const NewArrivals = () => {
           <div>
             <h2 className="text-4xl md:text-7xl font-black tracking-tighter uppercase mb-6 md:mb-8 leading-none">Global Sourcing,<br/>Personal Touch.</h2>
             <p className="text-neutral-400 text-sm md:text-lg font-light leading-relaxed mb-10 md:mb-12 max-w-lg">
-              We don't just buy clothes. We curate culture. Every piece in our 'Recent Drops' is hand-inspected by Otis himself in London and NYC before being listed. Quality is non-negotiable.
+              We don't just buy clothes. We curate culture. Every piece in our 'Recent Intake' is hand-inspected by Otis himself in Lagos before being listed. Quality is non-negotiable.
             </p>
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-4">

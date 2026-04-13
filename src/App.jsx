@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { MobileNav } from './components/MobileNav';
+import { ScrollToTop } from './components/ScrollToTop';
 import { Home } from './pages/Home';
 import { ProductListing } from './pages/ProductListing';
 import { NewArrivals } from './pages/NewArrivals';
@@ -16,6 +17,7 @@ import { ProductDetail } from './pages/ProductDetail';
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen bg-background text-on-background font-sans selection:bg-secondary selection:text-white">
         <Header />
         <Routes>
@@ -38,4 +40,3 @@ function App() {
 }
 
 export default App;
-

@@ -6,20 +6,20 @@ export function ProductDetail() {
   const upcomingDrops = [
     {
       id: 'drop-1',
-      title: "Air Max 'Volts' Retro",
-      category: "Footwear / Quickstrike",
-      date: "Expected Arriving: April 12",
-      price: 420.00,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCp4_OovWuMvz59jnsH4aErL9yDzwUx8S33GDHnfvMV7a075m17XAMw8EV6v1i2ffg1kXQQzQwRiGrIzMM-7AWfwqQWYXJPfkGhQibIAip_9",
+      title: "Sp5der Academy Rugby Polo",
+      category: "Apparel / Elite Drop",
+      date: "Expected Arriving: April 25",
+      price: 60000,
+      image: "/products/sp5der-rugby.jpg",
       status: "In Contention"
     },
     {
       id: 'drop-2',
-      title: "Essential Box Tee",
-      category: "Apparel / Studio",
-      date: "Expected Arriving: April 15",
-      price: 95.00,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDnsH2lYqgHuztfrnlFTWvz1LmM37wrf4b4gUL2ADdRPZRE5Gat8jgu27Cw3QFRyw0Lu6Af1ro4CECQZBBNCzeA9MN2zFZdCJvYmCmwmD_bkwKf0BiqE9T6OpY0TiyHHLYMCAdGVnyCoIbM67pcTijgDh4ms5N6Zwcwaag0g9tul2pzMVVwtc3fFKu7widCRspw5zjyLJ-j6_yd0WzpbCAkHj85lUPEVQCdjAsLhklihrT5FqpjE56MzTxfG2dBT1-C-Vtgx8xXdJA7",
+      title: "Scimitar Cargo Pants",
+      category: "Utilitarian / Studio",
+      date: "Expected Arriving: April 28",
+      price: 45000,
+      image: "/products/scimitar-khaki.jpg",
       status: "Securing Stock"
     }
   ];
@@ -69,7 +69,7 @@ export function ProductDetail() {
                   <h3 className="text-2xl md:text-3xl font-black text-white uppercase tracking-tighter mb-4">{drop.title}</h3>
                   <div className="flex justify-between items-center text-white/60 font-mono text-xs">
                     <span>{drop.date}</span>
-                    <span className="text-white font-bold">${drop.price.toFixed(2)}</span>
+                    <span className="text-white font-bold">₦{drop.price.toLocaleString()}</span>
                   </div>
                 </div>
               </div>

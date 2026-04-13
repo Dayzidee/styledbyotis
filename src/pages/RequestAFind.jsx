@@ -5,9 +5,9 @@ export const RequestAFind = () => {
   const [currentStep, setCurrentStep] = useState(1);
 
   const formatBudget = (val) => {
-    const min = Math.max(500, val - 1500);
+    const min = Math.max(10000, val - 50000);
     const max = val;
-    return `$${min.toLocaleString()} — $${max.toLocaleString()}`;
+    return `₦${min.toLocaleString()} — ₦${max.toLocaleString()}`;
   };
 
   return (
@@ -118,9 +118,9 @@ export const RequestAFind = () => {
                 <div className="relative py-4">
                   <input
                     className="w-full appearance-none bg-transparent cursor-pointer sourcing-range"
-                    max="10000"
-                    min="500"
-                    step="100"
+                    max="1000000"
+                    min="10000"
+                    step="5000"
                     type="range"
                     value={budget}
                     onChange={(e) => {
@@ -129,8 +129,8 @@ export const RequestAFind = () => {
                     }}
                   />
                   <div className="flex justify-between mt-4 text-[8px] md:text-[10px] font-bold text-white/40 uppercase tracking-widest">
-                    <span>$500</span>
-                    <span>$10k+</span>
+                    <span>₦10,000</span>
+                    <span>₦1M+</span>
                   </div>
                 </div>
               </section>
